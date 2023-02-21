@@ -122,46 +122,34 @@ export default function NavBar() {
                                     TECHNOLOGY
                                 </NavLink>
                             </li>
-                            <div class="dropdown">
-                                <button
-                                    className="btn btn-secondary dropdown-toggle"
-                                    type="button"
+                            <li className="navbarlink  nav-item dropdown text-white">
+                                <NavLink
+                                    className="nav-item dropdown-toggle"
+                                    href="/"
+                                    role="button"
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                 >
-                                    Other
-                                </button>
-                                <ul className="dropdown-menu">
+                                    OTHER
+                                </NavLink>
+                                <ul className="dropdown-menu ">
                                     <li>
-                                        Food
-                                        <NavLink to="/food" className="nav-item">
-                                            Food
+                                        <NavLink className="dropdown-item" to="/food">
+                                            FOOD
                                         </NavLink>
                                     </li>
                                     <li>
-                                        Beauty
-                                        <NavLink to="/beauty" className="nav-item">
-                                            Beauty
+                                        <NavLink className="dropdown-item" to="/entertainment">
+                                            ENTERTAINMENT
                                         </NavLink>
                                     </li>
                                     <li>
-                                        Entertainment
-                                        <NavLink to="/entertainment" className="nav-item">
-                                            Entertainment
+                                        <NavLink className="dropdown-item" to="/beauty">
+                                            BEAUTY
                                         </NavLink>
                                     </li>
                                 </ul>
-                            </div>
-
-                            {/* <Dropdown>
-                                <Dropdown.Toggle className="bg-black">Other</Dropdown.Toggle>
-
-                                <Dropdown.Menu>
-                                    <Dropdown.Item to="/food">Food</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2">Beauty</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3">Entertainment</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown> */}
+                            </li>
                         </ul>
                     </div>
                 </div>

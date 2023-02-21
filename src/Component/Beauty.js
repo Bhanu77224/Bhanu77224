@@ -34,7 +34,7 @@ export default function Beauty() {
                                     <h5 className="card-title mt-3 fw-bold">{item.yoast_head_json.title}</h5>
                                     <p className="card-text mt-4" dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }}></p>
                                     <Link to={`/button/${item.id}`}>
-                                        <button>Read more</button>
+                                        <button className="btn1">Read more</button>
                                     </Link>
                                 </div>
                             </div>
