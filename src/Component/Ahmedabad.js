@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import {Link} from "react-router-dom"
+
 // import "./abad.css"
 // import { Carousel } from 'react-bootstrap';
 
@@ -30,19 +31,22 @@ export default function Ahmedabad() {
                     <div className=" mb-3" id="card1">
                         <div className="row g-0">
                             <div className="col-md-4">
-                                <img src={item.yoast_head_json.og_image[0].url} className="img1" alt="..." />
+                                <img src={item.yoast_head_json.og_image[0].url} className="img1" id="img11" alt="..." />
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
-                                    <h5 className="card-title mt-3">{item.yoast_head_json.title}</h5>
-                                    <p className="card-text">{item.excerpt.rendered}</p>
+                                    <h5 className="card-title mt-3 fw-bold">{item.yoast_head_json.title}</h5>
+                                    <p className="card-text mt-4" dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }}></p>
+                                    <Link to={`/button/${item.id}`}>
+                                        <button id="button1" >Read more</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             ))}
-            
+
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
                     <li class="page-item">

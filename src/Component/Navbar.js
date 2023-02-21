@@ -124,22 +124,31 @@ export default function NavBar() {
                             </li>
                             <div class="dropdown">
                                 <button
-                                    class="btn btn-secondary dropdown-toggle"
+                                    className="btn btn-secondary dropdown-toggle"
                                     type="button"
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                 >
                                     Other
                                 </button>
-                                <ul class="dropdown-menu">
+                                <ul className="dropdown-menu">
                                     <li>
-                                        <NavLink to="/food">Food</NavLink>
+                                        Food
+                                        <NavLink to="/food" className="nav-item">
+                                            Food
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/beauty">Beauty</NavLink>
+                                        Beauty
+                                        <NavLink to="/beauty" className="nav-item">
+                                            Beauty
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/entertainment">Entertainment</NavLink>
+                                        Entertainment
+                                        <NavLink to="/entertainment" className="nav-item">
+                                            Entertainment
+                                        </NavLink>
                                     </li>
                                 </ul>
                             </div>

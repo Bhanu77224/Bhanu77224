@@ -25,6 +25,7 @@ import Business3 from './Component/Business3';
 import Entertainment from './Component/Entertainment';
 import Beauty from './Component/Beauty';
 import Food from './Component/Food';
+import Button from "./Component/Button"
 
 function App() {
     return (
@@ -33,7 +34,7 @@ function App() {
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
-                    <Route path="/corona" element={<Corona />}></Route>
+                    <Route path="/corona" element={<Corona  />}></Route>
                     <Route path="/corona2" element={<Corona2 />}></Route>
                     <Route path="/corona3" element={<Corona3 />}></Route>
                     <Route path="/ahmedabad" element={<Ahmedabad />}></Route>
@@ -54,6 +55,7 @@ function App() {
                     <Route path="/food" element={<Food />}></Route>
                     <Route path="/Entertainment" element={<Entertainment />}></Route>
                     <Route path="/beauty" element={<Beauty />}></Route>
+                    <Route path="/button/:id" element={<Button />}></Route>
                 </Routes>
             </BrowserRouter>
         </>
