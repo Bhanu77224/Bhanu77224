@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import {Link} from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 // import "./abad.css"
 // import { Carousel } from 'react-bootstrap';
@@ -10,7 +10,6 @@ export default function Ahmedabad() {
     useEffect(() => {
         getdata();
     }, []);
-    
 
     const [apiData, setApiData] = useState([]);
 
@@ -38,7 +37,7 @@ export default function Ahmedabad() {
                                     <h5 className="card-title mt-3 fw-bold">{item.yoast_head_json.title}</h5>
                                     <p className="card-text mt-4" dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }}></p>
                                     <Link to={`/button/${item.id}`}>
-                                        <button className='btn1' >Read more</button>
+                                        <button className="btn1">Read more..</button>
                                     </Link>
                                 </div>
                             </div>
