@@ -13,9 +13,9 @@ export default function NavBar() {
     return istrue ? (
         <>
             <section className="head">
-                <div className="container flexSB PaddingTB">
+                <div className="container flexSB PaddingTB ">
                     <div className="logo mt-1 mb-2" id="logo">
-                        <img src={logo} alt="" />
+                        <img src={logo} alt=""  />
                     </div>
                 </div>
             </section>
@@ -122,7 +122,7 @@ export default function NavBar() {
                                     TECHNOLOGY
                                 </NavLink>
                             </li>
-                            <li className="navbarlink  nav-item dropdown text-white">
+                            <li className="navbarlink  nav-item dropdown text-white ">
                                 <NavLink
                                     className="nav-item dropdown-toggle"
                                     href="/"

@@ -11,14 +11,14 @@ const Button = () => {
     });
     const getDatabyId = async (data) => {
         await axios.get('https://timenews.co.in/wp-json/wp/v2/posts/' + id, data).then((res) => {
-            console.log(res.data);
+            
             setReadata(res.data);
         });
     };
     return (
         <>
             <p className="text-center fw-bold fs-1" dangerouslySetInnerHTML={{ __html: readdata?.title?.rendered }}></p>
-            <p className="text-center" dangerouslySetInnerHTML={{ __html: readdata?.content?.rendered }}></p>;
+            <p className="text-center " dangerouslySetInnerHTML={{ __html: readdata?.content?.rendered }}></p>;
         </>
     );
 };
